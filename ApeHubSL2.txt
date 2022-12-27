@@ -1,119 +1,118 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
-local win = DiscordLib:Window("Ape Hub Remake")
+local win = DiscordLib:Window("Ape Hub")
 
-local serv = win:Server("Ape", "")
+local serv = win:Server("Gorilla", "")
 
 local btns = serv:Channel("Main")
 
 btns:Button("INF Jump", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/WweihvrM"))()
-DiscordLib:Notification("Notification", "INF Jump", "Okay!")
+	loadstring(game:HttpGet("https://pastebin.com/raw/WweihvrM"))()
+	
 end)
 
 btns:Button("Dupe", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/bqRqrhsC"))()
-	DiscordLib:Notification("Notification", "Duping IT WILL CRASH YOUR GAME!", "Okay!")
-	end)
 
-	btns:Button("Pick Up Tools", function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/mGptzi2x"))()
-		DiscordLib:Notification("Notification", "Click To Keep Getting Them", "Okay!")
-		end)
-		btns:Button("Infinite Yield", function()
-			loadstring(game:HttpGet("https://pastebin.com/raw/YRWrTfeK"))()
-			DiscordLib:Notification("Notification", "Infinite Yield", "Okay!")
-			end)	
-			btns:Button("Fling All", function()
-				loadstring(game:HttpGet(('https://raw.githubusercontent.com/tututu1mn13/KickGUILOLXD/main/scriptt.lua'),true))()
-				DiscordLib:Notification("Notification", "Flinging ALl", "Okay!")
-				end)
+end)
+
+btns:Button("Pick Up Tools", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/mGptzi2x"))()
+end)
+btns:Button("Infinite Yield", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/YRWrTfeK"))()
+
+end)	
+btns:Button("Fling All", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/tututu1mn13/KickGUILOLXD/main/scriptt.lua'),true))()
+
+end)
 
 
-		btns:Button("ESP", function()
-				loadstring(game:HttpGet("https://pastebin.com/raw/RG9RLck5"))()
-				DiscordLib:Notification("Notification", "ESP Enabled", "Okay!")
-				end)
+btns:Button("ESP", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/ctPUsxCM"))()
+
+end)
+
+
+
+local tps = serv:Channel("Teleports")
+
+tps:Button("Apartment 1", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/VJFMepRG"))()
+
+end)
+
+tps:Button("Apartment 2", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Tnd6R14t"))()
+
+end)
+
+tps:Button("Apartment 3", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/cLjzDiaX"))()
+
+end)
+
+
+tps:Button("Bandos", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/njQEtuPf"))()
+
+end)
+
+
+tps:Button("Quiz Clothing", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/TZ3nSJ2c"))()
+
+end)
+tps:Button("Sports Shop", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/0N3KS5a7"))()
+
+end)
+
+tps:Button("Ultimate Drip", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/R00KNW4q"))()
+
+end)
+
+
+tps:Button("Bank Of South London", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/bWARBqJe"))()
+
+end)
+
+tps:Button("Gas Station", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/QXG2uunf"))()
+
+end)
+
+tps:Button("Car Dealership", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/fuXjAUJh"))()
+
+end)
+
+
+tps:Button("Monkeys Tuning", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/hyy5CZV4"))()
+
+end)
+
+
+tps:Button("Urban", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/qs98AqWT"))()
 	
+end)
 
+tps:Button("Face Lift", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Qku4KrK7"))()
 
-			local tps = serv:Channel("Teleports")
-
-			tps:Button("Apartment 1", function()
-				loadstring(game:HttpGet("https://pastebin.com/raw/VJFMepRG"))()
-				DiscordLib:Notification("Notification", "Teleported", "Okay!")
-				end)
-
-				tps:Button("Apartment 2", function()
-					loadstring(game:HttpGet("https://pastebin.com/raw/Tnd6R14t"))()
-					DiscordLib:Notification("Notification", "Teleported", "Okay!")
-					end)
-
-					tps:Button("Apartment 3", function()
-						loadstring(game:HttpGet("https://pastebin.com/raw/cLjzDiaX"))()
-						DiscordLib:Notification("Notification", "Teleported", "Okay!")
-						end)
-
-						
-					tps:Button("Bandos", function()
-						loadstring(game:HttpGet("https://pastebin.com/raw/njQEtuPf"))()
-						DiscordLib:Notification("Notification", "Teleported", "Okay!")
-						end)
-
-									
-					tps:Button("Quiz Clothing", function()
-						loadstring(game:HttpGet("https://pastebin.com/raw/TZ3nSJ2c"))()
-						DiscordLib:Notification("Notification", "Teleported", "Okay!")
-						end)
-						tps:Button("Sports Shop", function()
-							loadstring(game:HttpGet("https://pastebin.com/raw/0N3KS5a7"))()
-							DiscordLib:Notification("Notification", "Teleported", "Okay!")
-							end)
-
-							tps:Button("Ultimate Drip", function()
-								loadstring(game:HttpGet("https://pastebin.com/raw/R00KNW4q"))()
-								DiscordLib:Notification("Notification", "Teleported", "Okay!")
-								end)
-
-								
-							tps:Button("Bank Of South London", function()
-								loadstring(game:HttpGet("https://pastebin.com/raw/bWARBqJe"))()
-								DiscordLib:Notification("Notification", "Teleported", "Okay!")
-								end)
-
-								tps:Button("Gas Station", function()
-									loadstring(game:HttpGet("https://pastebin.com/raw/QXG2uunf"))()
-									DiscordLib:Notification("Notification", "Teleported", "Okay!")
-									end)
-
-									tps:Button("Car Dealership", function()
-										loadstring(game:HttpGet("https://pastebin.com/raw/fuXjAUJh"))()
-										DiscordLib:Notification("Notification", "Teleported", "Okay!")
-										end)
-
-										
-									tps:Button("Monkeys Tuning", function()
-										loadstring(game:HttpGet("https://pastebin.com/raw/hyy5CZV4"))()
-										DiscordLib:Notification("Notification", "Teleported", "Okay!")
-										end)
-
-													
-									tps:Button("Urban", function()
-										loadstring(game:HttpGet("https://pastebin.com/raw/qs98AqWT"))()
-										DiscordLib:Notification("Notification", "Teleported", "Okay!")
-										end)
-
-										tps:Button("Face Lift", function()
-											loadstring(game:HttpGet("https://pastebin.com/raw/Qku4KrK7"))()
-											DiscordLib:Notification("Notification", "Teleported", "Okay!")
-											end)
+end)
 
 local tgls = serv:Channel("Fun")
 
 tgls:Toggle("Speed",false, function(bool)
-print(bool)
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
-print("Changed Speed.")
+	print(bool)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+	print("Changed Speed.")
 end)
 
 tgls:Toggle("Spam Chat",false, function(bool)
@@ -121,10 +120,10 @@ tgls:Toggle("Spam Chat",false, function(bool)
 	local A_2 = "All"
 	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 	while true do
-	 wait(0.1)
-	 Event:FireServer(A_1, A_2)
-	
-		
+		wait(0.1)
+		Event:FireServer(A_1, A_2)
+
+
 	end 
 end)
 
@@ -136,11 +135,11 @@ end)
 
 
 drops:Button("Clear", function()
-drop:Clear()
+	drop:Clear()
 end)
 
 drops:Button("Add option", function()
-drop:Add("Option")
+	drop:Add("Option")
 end)
 
 local clrs = serv:Channel("Colorpickers")
@@ -150,7 +149,7 @@ clrs:Colorpicker("ESP Color", Color3.fromRGB(255,1,1), function(t)
 
 end)
 
-	
+
 
 
 
