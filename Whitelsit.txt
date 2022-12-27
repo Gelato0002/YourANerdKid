@@ -1,5 +1,5 @@
 local IsPlayerWhitelisted = {
-	2654010344
+   2654010344	
 }
 
 
@@ -7,13 +7,16 @@ local Player = game.Players.LocalPlayer
 
 
 if table.find(IsPlayerWhitelisted,Player.UserId) then
-	print('Checking Whitelist.')
-	task.wait(1)
-	print('Checking Whitelist..')
-	task.wait(1)
-	print('Checking Whitelist...')
-	task.wait(3)
-	print('Whitelisted.')
+  if rconsoleprint then
+            if syn then
+                rconsoleprint("@@LIGHT_CYAN@@")
+                rconsoleprint("Checking Whitelist")
+                 task.wait(3)
+                 rconsoleprint(" Whitelisted!")
+            end
+  end
+                
+        
 	
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Gelato0002/YourANerdKid/main/ApeHubSL2.txt'),true))()
 	
@@ -21,12 +24,15 @@ if table.find(IsPlayerWhitelisted,Player.UserId) then
 end
 
 if not table.find(IsPlayerWhitelisted,Player.UserId) then
-	print('Checking Whitelist.')
-	task.wait(.2)
-	print('Checking Whitelist..')
-	task.wait(.2)
-	print('Checking Whitelist...')
-	task.wait(3)
+  if rconsoleprint then
+            if syn then
+                rconsoleprint("@@LIGHT_CYAN@@")
+                rconsoleprint("Checking Whitelist")
+                 task.wait(3)
+                 rconsoleprint(" Not Whitelisted, Please Dm Gelato#3473 To Buy A Whitelist.")
+            end
+  end
+                
 	Player:Kick("Not Whitelisted, Please Dm Gelato#3473 To Buy A Whitelist.")
 	return
 end
