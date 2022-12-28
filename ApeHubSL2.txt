@@ -28,11 +28,7 @@ btns:Button("Fling All -- NOT WORKING YET", function()
 
 end)
 
-btns:Button("Speed",false, function(bool)
-	print(bool)
-	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
-	print("Changed Speed.")
-end)
+
 
 btns:Button("ESP", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/ctPUsxCM"))()
@@ -131,6 +127,8 @@ end)
 
 
 
+
+
 local prem = serv:Channel("Premium")
 
 prem:Button("Hunnid Chain", function()
@@ -152,7 +150,11 @@ end)
 
 local tgls = serv:Channel("Fun")
 
-
+tgls:Toggle("Speed",false, function(bool)
+	print(bool)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+	print("Changed Speed.")
+end)
 
 tgls:Toggle("Spam Chat",false, function(bool)
 	local A_1 = "Ape Hub On Top^"
