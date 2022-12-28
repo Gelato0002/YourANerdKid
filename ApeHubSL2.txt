@@ -28,7 +28,7 @@ btns:Button("Fling All -- NOT WORKING YET", function()
 
 end)
 
-btns:Toggle("Speed",false, function(bool)
+btns:Button("Speed",false, function(bool)
 	print(bool)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
 	print("Changed Speed.")
