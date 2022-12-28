@@ -1,17 +1,28 @@
 local IsPlayerPremium = {
     12340284
 }
+getgenv().ApeHub = {}
+getgenv().HasPremium = nil
+
 local Player = game.Players.LocalPlayer
-if table.find(IsPlayerPremium,Player.UserId) then
-    
-for i,v in pairs(game.Players:GetPlayers()) do
-    
+
+ for i, player in pairs(game.Players:GetPlayers()) do
+        if table.find(IsPlayerPremium, player.UserId) then
+            table.insert(ApeHub, player.UserId)
+        
+        end
+    end
+        
+for i, plr in pairs(game.Players:GetPlayers()) do
+           
+            if table.find(IsPlayerPremium, plr.UserId) then
+               
     game.ReplicatedStorage.Chains.HunnidChain.Handle.Transparency = 0
-    game.ReplicatedStorage.Chains.HunnidChain:Clone().Parent = game.Workspace:FindFirstChild(v.Name)
+    game.ReplicatedStorage.Chains.HunnidChain:Clone().Parent = game.Workspace:FindFirstChild(plr.Name)
   
-  game.Workspace:FindFirstChild(v.Name).Parent = game.ReplicatedStorage
+  game.Workspace:FindFirstChild(plr.Name).Parent = game.ReplicatedStorage
   task.wait()
-  game.ReplicatedStorage:FindFirstChild(v.Name).Parent = game.Workspace
+  game.ReplicatedStorage:FindFirstChild(plr.Name).Parent = game.Workspace
      print("Success")
      
 end
