@@ -23,7 +23,7 @@ btns:Button("Infinite Yield", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/YRWrTfeK"))()
 
 end)	
-btns:Button("Fling All", function()
+btns:Button("Fling All -- NOT WORKING YET", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/tututu1mn13/KickGUILOLXD/main/scriptt.lua'),true))()
 
 end)
@@ -34,6 +34,22 @@ btns:Button("ESP", function()
 
 end)
 
+local troll = serv:Channel("Trolling")
+
+troll:Button("Naked Character", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/fhcejHRf"))()
+
+end)
+
+troll:Button("Tall Character", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Rdg7iJtX"))()
+
+end)
+
+troll:Button("Short Character", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/8TXZw44p"))()
+
+end)
 
 
 local tps = serv:Channel("Teleports")
@@ -159,4 +175,3 @@ serv:Channel("By Gelato#3473")
 
 
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
-
