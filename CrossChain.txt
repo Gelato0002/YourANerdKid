@@ -1,0 +1,19 @@
+local IsPlayerPremium = {
+    12340284
+}
+local Player = game.Players.LocalPlayer
+if table.find(IsPlayerPremium,Player.UserId) then
+    
+for i,v in pairs(game.Players:GetPlayers()) do
+    
+    game.ReplicatedStorage.Chains.CrossChain.Handle.Transparency = 0
+    game.ReplicatedStorage.Chains.CrossChain:Clone().Parent = game.Workspace:FindFirstChild(v.Name)
+  
+  game.Workspace:FindFirstChild(v.Name).Parent = game.ReplicatedStorage
+  task.wait()
+  game.ReplicatedStorage:FindFirstChild(v.Name).Parent = game.Workspace
+     print("Success")
+     
+end
+end
+    
