@@ -1,5 +1,6 @@
 local IsPlayerWhitelisted = {
    	12340284
+	2654010344
 }
 
 local IsPlayerPremium = {
@@ -8,6 +9,7 @@ local IsPlayerPremium = {
 
 local IsPlayerOwner = {
     12340284
+    2654010344
 }
 local Player = game.Players.LocalPlayer
 
