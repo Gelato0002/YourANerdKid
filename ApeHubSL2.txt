@@ -2,7 +2,7 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("Ape Hub")
 
-local serv = win:Server("Gorilla", "")
+local serv = win:Server("Gelatos Exploits", "")
 
 local btns = serv:Channel("Main")
 
@@ -12,7 +12,7 @@ btns:Button("INF Jump", function()
 end)
 
 btns:Button("Dupe", function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/Y2V4gchN"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/bqRqrhsC"))()
 
 end)
 
@@ -23,11 +23,6 @@ btns:Button("Infinite Yield", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/YRWrTfeK"))()
 
 end)	
-btns:Button("Fling All -- NOT WORKING YET", function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/tututu1mn13/KickGUILOLXD/main/scriptt.lua'),true))()
-
-end)
-
 
 
 btns:Button("ESP", function()
@@ -127,23 +122,51 @@ end)
 
 
 
+local Gun = serv:Channel("Gun Mods")
 
-
-local prem = serv:Channel("Premium")
-
-prem:Button("Hunnid Chain", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Gelato0002/YourANerdKid/main/HunndChain.txt"))()
+Gun:Button("Automatic Pistol - Click Multiple Times", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/TPu0e924"))()
 
 end)
+
+Gun:Button("No Recoil - Click Multiple Times", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/XssHpWj3"))()
+
+end)
+
+Gun:Button("Bullet Changer - Click Multiple Times", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/M8RNbkGX"))()
+
+end)
+
+
+local prem = serv:Channel("Client Sided Accessories")
 
 prem:Button("Cross Chain", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Gelato0002/YourANerdKid/main/CrossChain.txt"))()
 
 end)
 
+prem:Button("Hunnid Chain", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Gelato0002/YourANerdKid/main/HunndChain.txt"))()
+
+end)
+
 prem:Button("Faceless", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Gelato0002/YourANerdKid/main/NoFace.txt"))()
 
+end)
+
+prem:Button("Headless", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Qzxwvvfm"))()
+end)
+
+prem:Button("Korblox", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/GEZD1hkA"))()
+end)
+
+premFE:Button("No Face", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/xDhjbBBu"))()
 end)
 
 
@@ -156,8 +179,14 @@ tgls:Toggle("Speed",false, function(bool)
 	print("Changed Speed.")
 end)
 
+tgls:Toggle("Kill Yourself",false, function(bool)
+	print(bool)
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	print(game.Players.LocalPlayer.Character.Humanoid.Health)
+end)
+
 tgls:Toggle("Spam Chat",false, function(bool)
-	local A_1 = "Ape Hub On Top^"
+	local A_1 = "Ape Hub Coming Soon!"
 	local A_2 = "All"
 	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 	while true do
